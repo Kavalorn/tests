@@ -1,0 +1,45 @@
+.article-head
+    max-width: 917px
+    border-bottom: 2px solid $red
+    margin: 82px auto 42px auto
+    position: relative
+    left: -22px
+    &__heading
+        font-size: $size4
+        font-weight: normal
+        margin: 2px auto
+        max-width: $article-content-max-width
+        position: relative
+        left: 22px
+    &__number
+        font-size: $size1
+        color: $grey
+        font-family: $HNB
+        position: absolute
+        left: -25px;
+        bottom: -70px;
+        z-index: -1;
+    &__number-word
+        color: $red
+        font-family: $PTSI
+        font-size: $size2
+        position: absolute
+        left: -5px
+        bottom: -3px
+
+@media screen and (max-width: 1030px)
+    .article-head
+        left: 0
+        &__heading
+            left: 0
+        &__number
+            display: none
+        &__number-word
+            display: none
+
+
+@media screen and (max-width: 720px)
+    .article-head
+        margin: 42px auto 22px auto
+        &__heading
+            font-size: $size4
